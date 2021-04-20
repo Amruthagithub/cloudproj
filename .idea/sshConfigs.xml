@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="ec2-3-93-196-214.compute-1.amazonaws.com" id="7a0a3727-175f-40df-b790-f1dfccfc562c" keyPath="C:\Users\AMARA\Documents\amrutha.ppk" port="22" nameFormat="DESCRIPTIVE" username="ubuntu" />
+    </configs>
+  </component>
+</project>
