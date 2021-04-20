@@ -360,11 +360,13 @@ def  consult_a_doctor(request):
     if request.method == 'GET':
 
         
-        doctortype = request.session['doctortype']
+        doctortype = request.GET['doctortype']
         print(doctortype)
-        dobj = doctor.objects.all()
-        #dobj = doctor.objects.filter(specialization=doctortype)
-
+        dobj=None
+        try:
+            dobj = doctor.objects.filter(specialization=doctortype)
+        except Exception:
+            pass
 
         return render(request,'patient/consult_a_doctor/consult_a_doctor.html',{"dobj":dobj})
 
